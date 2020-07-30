@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Form_01</title>
+</head>
+<body>
+	<center>
+		<font size="14" color="blue">My First Form <br><br></font>
+	</center>
+
+	<form action="trata_dados.html" name="form1" target="_self"> 
+		<b> Name:</b> 		<input type="text" size="50" name="campo_name" value="Put here your name"><br><br>
+		<b> Idade:</b> 		<input type="text" maxlength="2" name="campo_age"><br><br>
+		<b> Sex:</b> 		<input type="radio" name="campo_sex"> Man
+			 				<input type="radio" name="campo_sex" checked="checked"> Womam<br><br>
+		<b> User:</b>		<input type="text" size="30" name="campo_user"><br>
+		<b> Password:</b> 	<input type="Password" size="30" maxlength="10" name="campo_pass"><br><br>
+		<b> Likes and Interests:</b><br>
+							<input type="checkbox" name="campo_gym">Gym<br>
+							<input type="checkbox" name="campo_music">Music<br>
+							<input type="checkbox" name="campo_book">Book<br><br>
+		Adress: 
+			<select>
+			<option></option>
+			<option>Braga</option>
+			<option>Porto</option>
+			<option>Guimarães</option>
+			<option>Other</option>
+			</select> <br><br>
+
+		Message:<br>>
+			<textarea cols="100" rows="10" name="campo_message">
+				Type your text
+			</textarea><br><br>
+
+			<input type="submit" value="Send" name="campo_submit">
+			<input type="reset" value="Clear" name="campo_clear">
+	</form>	
+</body>
+</html>
