@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Forms</title>
+</head>
+<body>
+	<form action="processa.php" method="post">
+<!* Toda input tem que ter um type, name and value. ->
+		<label>Text</label>
+		<input type="text" name="text1" placeholder="eu sou texto"> <!* No caso da input text não é necessário o value ->
+
+		<br>
+		
+		<label>Password</label>
+		<input type="password" name="senha"> <!* Nesse caso o valor será ocultado ->
+
+		<label>Oculto</label>
+		<input type="hidden" name="info_oculta" value="messagem oculta"> <!* Esse tipo exige value ->
+
+		<br>
+
+		<label>Selection</label>
+		<select name="section">
+			<option value="1">Option 1</option>
+			<option value="2">Option 2</option>
+		</select>
+
+		<br>
+
+		<label>Radiobutton</label>
+		<input type="radio" name="radio1" value="1">
+		<input type="radio" name="radio1" value="2"> <!* tem que ter o mesmo nome que o primeiro radio ->
+
+		<br>
+
+		<label>Checkbox</label>
+		<input type="checkbox" name="ck1" value="1" checked="">Valor 1<br> <!* A opção checked já faz com que esta opção apareça marcada na página ->
+		<input type="checkbox" name="ck1" value="2">Valor 2<br>
+		<input type="checkbox" name="ck1" value="3">Valor 3
+
+		<br>
+
+		<input type="submit" name="submit" value="Enviar"> <!* Envia os dados coletado ->
+
+	</form>
+</body>
+</html>
